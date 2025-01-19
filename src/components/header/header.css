@@ -1,0 +1,277 @@
+.header_Container {
+  width: 100%;
+  padding: 0 12px;
+}
+
+.header_Container_Active {
+  width: 100%;
+  padding: 16px 12px;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 0.6rem;
+  left: 1.8rem;
+  z-index: 3;
+  .content_container {
+    width: 100%;
+    box-shadow: var(--primary-shadow);
+    background: #000;
+    color: white;
+    .TypeHere {
+      color: black;
+    }
+    .menu_icon_container .sidenav-toggler-line,
+    .menu_icon_container .sidenav-toggler-line::before,
+    .menu_icon_container .sidenav-toggler-line::after {
+      background: rgb(255, 255, 255);
+    }
+  }
+}
+/* .DashBoard_headerFixed,
+.Billing_Active,
+.Profile_Active {
+  padding-top: 8rem;
+}
+.Table_Active {
+  margin-top: 4rem;
+} */
+.topRightIcon_container {
+  margin-top: 1rem;
+}
+.showPageStatu {
+  padding: 0 0.4rem;
+  font-size: 15px;
+}
+.showPageStatu span {
+  opacity: 0.7;
+  padding-right: 4px;
+}
+.content_container {
+  width: 100%;
+  height: auto;
+  /* box-shadow: var(--primary-shadow); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0.2rem;
+  border-radius: 0.8rem;
+}
+
+.content_container_active {
+  box-shadow: var(--primary-shadow);
+  padding: 1.1rem 0.2rem;
+}
+
+.topRightIcon_container ul {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.topRightIcon_container ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0 0.4rem;
+}
+.topRightIcon_container ul li i {
+  color: var(--iconBg-color);
+  opacity: 0.8;
+}
+.menu_icon_container .sidenav-toggler-line {
+  width: 25px;
+  height: 2px;
+  background: #000;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(180deg);
+}
+.menu_icon_container:hover {
+  cursor: pointer;
+}
+
+.menu_icon_container .sidenav-toggler-line::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.menu_icon_container .sidenav-toggler-line::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.menu_icon_container.active .sidenav-toggler-line::after,
+.menu_icon_container.active .sidenav-toggler-line::before {
+  content: "";
+  display: block;
+  width: 20px;
+  right: 0;
+}
+
+.SearchContainer .SearchInputDiv {
+  width: 400px;
+  height: 2rem;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  outline: none;
+  border: none;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  position: relative;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.SearchContainer input {
+  width: 600px;
+  height: 100%;
+  border: none;
+  margin-left: 4.9rem;
+  padding: 9px 0;
+}
+.SearchLable {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+}
+
+.SearchLable_active {
+  position: absolute;
+  top: -11px;
+  left: 12px;
+  transition: all 0.5s ease-in-out;
+}
+
+.SearchContainer input:focus {
+  outline: none;
+}
+.SearchContainer input:focus + .SearchLable {
+  position: absolute;
+  top: 1px;
+}
+
+.header_Container .dropdown-menu.dropdown-menu-end img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.header_Container .dropdown-menu.dropdown-menu-end {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.header_Container .dropdown-menu.dropdown-menu-end.active {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+body {
+  transition: 0.5s ease-in-out;
+}
+body.dark-mode {
+  background: #000;
+  color: white;
+  transition: all 0.5s ease-in-out;
+
+  .YourTransaction,
+  .YourTransaction .text-body-tertiary {
+    color: white;
+  }
+  .SingProjuct,
+  .card {
+    color: white;
+    background: #000;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1),
+      0px 1px 3px rgba(255, 255, 255, 0.05);
+    border: 1.5px solid gray;
+    border-radius: 5px;
+  }
+  .Setting {
+    color: white;
+    border: 1px solid white;
+    background: #000;
+  }
+  .borderadd {
+    border: 1px solid gray;
+  }
+  .BottomProfileContent_Container,
+  .bodyActive,
+  .list-group-item {
+    background: #000;
+    color: white;
+  }
+  .bodyActive.nav-link {
+    color: white;
+  }
+
+  .text-body-tertiary,
+  i,
+  p,
+  .text-secondary,
+  .menu,
+  h6,
+  h5,
+  h4,
+  span,
+  lable,
+  li,
+  .smaller,
+  .text-dark.text-body,
+  .clan {
+    opacity: 1;
+    color: white;
+  }
+  .TypeHere {
+    color: black;
+  }
+  .menu_icon_container .sidenav-toggler-line,
+  .menu_icon_container .sidenav-toggler-line::before,
+  .menu_icon_container .sidenav-toggler-line::after {
+    background: white;
+  }
+  .mask_img {
+    opacity: 0;
+  }
+  .btn_and_smallImgContainer button {
+    background: #000;
+    color: wheat;
+  }
+  .btn-outline,
+  .btn-outline-dark {
+    color: white;
+  }
+}
+.card {
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .SearchContainer {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .header_Container_Active {
+    inset: 0;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .header_Container_Active {
+    width: 100%;
+    left: 5.5rem;
+    padding-right: 0.1rem;
+  }
+}

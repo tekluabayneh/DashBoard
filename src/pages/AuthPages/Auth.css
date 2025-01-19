@@ -1,0 +1,25 @@
+.navbar {
+  z-index: 2222;
+}
+.main-content {
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+.bg-gradient-dark {
+  margin-top: -2rem;
+}
+.main-content .shadow-dark {
+  background: #000;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  #navbar-brand {
+    background: #000;
+    display: none;
+  }
+}

@@ -1,0 +1,79 @@
+.BillingInformation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.Information {
+  width: 55%;
+  flex-shrink: 1;
+}
+.YourTransaction {
+  width: 45%;
+}
+
+.SingleBillingInformation {
+  width: 90%;
+  background: rgba(235, 234, 234, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.billingContent span {
+  font-size: 14px;
+}
+.YourTransaction {
+  display: flex;
+  flex-direction: column;
+}
+.SingleBillingInformation i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.YourTransaction i {
+  font-size: 1rem;
+}
+
+.smaller {
+  font-size: 14px;
+  color: gray;
+}
+.curcle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+.curcle.green {
+  border: 1px solid green;
+}
+.curcle.notWork {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 900px) {
+  .BillingInformation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .Information {
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .YourTransaction {
+    width: 100%;
+  }
+
+  .SingleBillingInformation {
+    width: 98%;
+  }
+}

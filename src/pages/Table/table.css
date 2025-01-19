@@ -1,0 +1,350 @@
+p {
+  opacity: 0.8;
+}
+.card p .money {
+  color: #000000;
+  opacity: 1;
+  font-size: 1.1rem;
+}
+
+.topDayShow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  border: none;
+  background-color: transparent;
+  height: 1px;
+}
+.DashBoard .shadow-dark {
+  width: 45px;
+  height: 50px;
+  background: #000;
+  color: white;
+  padding: 0.7rem 0;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.DashBoard .card {
+  background: #ffffff;
+  /* border: 1px solid rgb(223, 222, 222); */
+  box-shadow: var(--primary-shadow);
+}
+
+.card-header p {
+  font-size: 15px;
+}
+
+.k_money {
+  font-weight: 700;
+  font-size: 24px;
+}
+.show_days {
+  font-size: 14px;
+  font-weight: 500;
+}
+.chart .card {
+  padding: 12px;
+}
+.card_fotter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1;
+  i {
+    font-size: 17px;
+  }
+  p {
+    padding-top: 1rem;
+  }
+}
+
+/* projuct css */
+.Table_list_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: var(--primary-shadow);
+  border-radius: 10px;
+  margin-top: 4rem;
+  overflow-x: auto;
+}
+
+.TablecontentContainer {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 380px 100px 150px 100px 250px 90px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Table {
+  position: relative;
+}
+
+.TableTitle {
+  width: 90%;
+  top: 1rem;
+  left: 0;
+  position: absolute;
+  background: #000;
+  border-radius: 10px;
+  color: white;
+  margin: 0 0 0 3.2rem;
+}
+
+.TableTitle h5 {
+  padding: 1.3rem;
+}
+
+.companyName_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.TablecontentContainer p {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.img_container {
+  display: flex;
+
+  img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid white;
+    cursor: pointer;
+  }
+}
+.img_container img:not(:first-child) {
+  margin-left: -9px;
+}
+.CompnyLogo {
+  width: 35px;
+  height: 35px;
+}
+
+.TebleHeader {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 380px 100px 150px 100px 250px 90px;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 0 0 0.5rem;
+  color: gray;
+}
+
+.TebleHeader p {
+  font-size: 9px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.TableCompeny {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.subtitle {
+  font-size: 14px;
+  color: gray;
+}
+.timeline-block {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.Table .companyName_wrapper {
+  margin-top: 1.4rem;
+  margin-left: 0.5rem;
+
+  h6 {
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.8;
+  }
+  p {
+    opacity: 0.6;
+    font-size: 12px;
+  }
+}
+.functionNameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: capitalize;
+  span:first-child {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+  }
+
+  span {
+    font-size: 12px;
+    color: gray;
+  }
+}
+.Table hr.Project_hr {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.status {
+  width: 60px;
+  background: lightblue;
+  border-radius: 10px;
+  padding-left: 0.7rem;
+  padding-bottom: 0.2rem;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: green;
+  transition: all 0.5s ease-in-out;
+}
+.status.offline {
+  color: red;
+}
+
+.status.online {
+  animation: glow 2s infinite;
+  font-weight: bold;
+}
+
+.Employed {
+  color: gray;
+}
+
+.Employed.edit {
+  font-size: 12px;
+  font-weight: 700;
+}
+.Employed.edit:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s ease-in-out;
+}
+
+.person {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.ProjectsTableContent {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 380px 100px 150px 100px 250px 90px;
+  align-items: center;
+  overflow: hidden;
+}
+.ProjectsTable .project_list_container {
+  padding-top: 4rem !important;
+  margin-top: 3rem;
+}
+.ProjectTable {
+  position: relative;
+}
+
+.ProjectsTable .project_header {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: 380px 100px 150px 100px 250px 90px;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.3rem 0.5rem;
+  color: gray;
+}
+
+.ProjectTable hr {
+  margin: 0.5rem;
+}
+.Budget {
+  font-optical-sizing: 15px;
+  font-weight: 700;
+  color: gray;
+}
+
+.ProjectsTable .buget {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .TablecontentContainer,
+  .ProjectsTableContent {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    /* gap: 2rem; */
+    grid-template-columns: 180px 70px 70px 50px 150px 50px;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .TebleHeader,
+  .ProjectsTable .project_header {
+    width: 100%;
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 180px 70px 70px 50px 150px 50px;
+
+    align-items: center;
+    overflow: hidden;
+    padding: 0 0 0 0.5rem;
+    color: gray;
+  }
+}
+
+.ProjectsTableContent .compeny h6 {
+  padding-left: 0.7rem;
+}
+
+@media (max-width: 600px) {
+  .TableTitle {
+    margin: 0 0 0 1rem;
+  }
+}
+@media (max-width: 559px) {
+  .Employed.edit {
+    display: none;
+  }
+}
+
+/* Keyframes for a glowing animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgb(122, 211, 211), 0 0 10px rgb(123, 235, 235),
+      0 0 20px rgb(142, 255, 255);
+    color: rgb(55, 249, 249);
+  }
+  50% {
+    text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua;
+    color: aqua;
+  }
+  100% {
+    text-shadow: 0 0 5px rgb(0, 209, 209), 0 0 10px rgb(0, 209, 209),
+      0 0 20px rgb(0, 209, 209);
+    color: rgb(0, 209, 209);
+  }
+}

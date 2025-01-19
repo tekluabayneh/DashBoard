@@ -1,13 +1,48 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --primary-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  ---orange-color: linear-gradient(195deg, #ef5350 0%, #e53935 100%);
+  --lightOrange-color: linear-gradient(195deg, #ffa726 0%, #fb8c00 100%);
+  --lightgreen-color: linear-gradient(195deg, #66bb6a 0%, #43a047 100%);
+  --green-color: linear-gradient(195deg, #49a3f1 0%, #1a73e8 100%);
+  --blueBlack-color: linear-gradient(195deg, #42424a 0%, #191919 100%);
+  --lightred-color: linear-gradient(195deg, #e47398 0%, #d66991 100%);
+  --iconBg-color: linear-gradient(195deg, #42424a 0%, #191919 100%);
+  --money-color: #4caf50;
+}
+
+.geist-mono-bold {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  background: #faf6e3;
+  font-family: "Geist Mono", monospace;
+}
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded");
+.material-symbols-rounded {
+  font-family: "Material Symbols Rounded";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Adjust size as needed */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+.card {
+  border: none;
+  box-shadow: var(--primary-shadow);
 }
